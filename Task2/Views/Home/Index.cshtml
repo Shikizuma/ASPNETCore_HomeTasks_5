@@ -1,0 +1,18 @@
+﻿@model DataModel
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <form asp-controller="home" asp-action="index" method="post">
+        <label for="value">Значення:</label><br>
+        <input type="text" id="value" name="Value"><br><br>
+        <label for="datetime">Дата та час:</label><br>
+        <input type="datetime-local" id="datetime" name="DateTime"><br><br><br>
+        <input type="submit" value="Відправити">
+        <div>
+            <a asp-controller="home" asp-action="test">Test View</a>
+        </div>
+    </form>
+</div>

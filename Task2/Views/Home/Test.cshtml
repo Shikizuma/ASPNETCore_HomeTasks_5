@@ -1,0 +1,24 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/site.css" rel="stylesheet" />
+    <title>Sample Test Page</title>
+</head>
+<body>
+    <h1>Зберігання стану в cookies. Результат</h1>
+
+    <div id="result">
+        Saved State - @Model
+    </div>
+    <ul>
+        <li><a asp-controller="sample" asp-action="index">назад</a></li>
+        <li><a asp-controller="home" asp-action="index">головна</a></li>
+    </ul>
+</body>
+</html>
